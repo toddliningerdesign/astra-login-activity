@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <toddlininger_astraLoginActivity>
+            <login_tracking>
+                <extension_version>1.0.0</extension_version>
+                <enable_admin_login_tracking>1</enable_admin_login_tracking>
+                <enable_customer_login_tracking>0</enable_customer_login_tracking>
+            </login_tracking>
+        </toddlininger_astraLoginActivity>
+    </default>
+</config>

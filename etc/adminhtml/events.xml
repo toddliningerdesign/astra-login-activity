@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <!--  admin login in -->
+    <event name="backend_auth_user_login_success">
+        <observer name="toddlininger_astraLoginActivity_login_success" instance="ToddLininger\AstraLoginActivity\Observer\Backend\AdminLoginSuccess" />
+    </event>
+    <event name="backend_auth_user_login_failed">
+        <observer name="toddlininger_astraLoginActivity_login_success" instance="ToddLininger\AstraLoginActivity\Observer\Backend\AdminLoginFailed" />
+    </event>
+</config>

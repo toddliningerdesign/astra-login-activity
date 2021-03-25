@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="security" translate="label" sortOrder="200">
+            <label>Security</label>
+        </tab>
+        <section id="toddlininger_astraLoginActivity" translate="label" type="text" sortOrder="600" showInDefault="1" showInWebsite="0" showInStore="0">
+            <class>separator-top</class>
+            <label>Astra Login Protection</label>
+            <tab>security</tab>
+            <resource>ToddLininger_AstraLoginActivity::config</resource>
+
+            <group id="login_tracking" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Astra Login Protection</label>
+                <field id="login_tracking_link" translate="label" type="label" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0" >
+                    <label><![CDATA[About]]></label>
+                    <comment><![CDATA[Astra Website Security service required. <a href="https://vrlps.co/7KT2B3k/cp" target="_blank" rel="noopener noreferrer">See pricing.</a>]]></comment>
+                </field>
+                <field id="extension_version" translate="label" type="label" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Version</label>
+                </field>
+                <field id="enable_admin_login_tracking" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0" >
+                    <label><![CDATA[Monitor Admin Logins]]></label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+                <field id="enable_customer_login_tracking" translate="label" type="select" sortOrder="40" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label><![CDATA[Monitor Customer Logins]]></label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
+
+
